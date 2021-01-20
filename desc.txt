@@ -1,0 +1,55 @@
+1.Install and run Webpack
+
+npm install --save-dev webpack webpack-cli
+npm init
+export and import(dependencies)
+
+"private": true in package.json
+
+start: "webpack --config webpack.config.js"
+
+webpack.config.js
+module.exports: {
+    entry:
+    output: {filename
+     path path.resolve(__dirname, dist)} // const path = require("path")
+    
+}
+
+style loader, css loader
+module: {
+    rules: [
+        {
+            test: \/.css$\
+            use:[bakcward loaders]
+        }
+    ]
+}
+
+npm install -save-dev bootstrap
+ css ->scss
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+npm install sass-loader node-sass
+use += sass loader 
+
+filename -> [hash]
+
+npm install --save-dev html-webpack-plugin
+var HtmlWebpackPlugin = require("html-webpack-plugin")
+
+//add plugins to config
+
+plugins :[new HtmlWebpackPlugin({
+    template:"./src/template.html"
+})],
+
+template.html without css link
+
+//create 3 different webpack config files
+
+npm install --save-dev webpack-merge
+
+const = common require(".webpack.commmon")
+const merge = require(webpa);

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tip Calculator</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <div id="calculator">
+          <form>
+            <p>How much was your bill?
+              <p>
+                $ <input id="billamt" type="text" placeholder="Bill Amount">
+      
+                <p>How was your service?
+                  <p>
+                    <select id="serviceQual">
+                  <option disabled selected value="0">-- Choose an Option --</option>
+                  <option value="0.3">30&#37; &#45; Outstanding</option>
+                  <option value="0.2">20&#37; &#45; Good</option>
+                  <option value="0. 15">15&#37; &#45; It was OK</option>
+                  <option value="0.1">10&#37; &#45; Bad</option>
+                  <option value="0.05">5&#37; &#45; Terrible</option>
+              </select>
+      
+          </form>
+          <p>How many people are sharing the bill?</p>
+          <input id="peopleamt" type="text" placeholder="Number of People"> people
+          <button type="button" id="calculate">Calculate!</button>
+      
+        </div>
+        <!--calculator end-->
+        <div id="totalTip">
+          <sup>$</sup><span id="tip">0.00</span>
+          <small id="each">each</small>
+        </div>
+        <!--totalTip end-->
+      
+      </div>
+      <!--container end-->
+</body>
+
+</html>
